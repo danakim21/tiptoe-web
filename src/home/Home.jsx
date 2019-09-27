@@ -6,11 +6,7 @@ import Timeline from './image/Timeline.png';
 import threeimages from './image/threeimages.png';
 import threesteps from './image/threesteps.png';
 import gray from './image/gray.png';
-<<<<<<< HEAD
 import Footer from '../footer/footer';
-
-=======
->>>>>>> master
 import Typing from 'react-typing-animation';
 import { Slide } from 'react-slideshow-image';
 import Slider from './slideshow/parentslider.jsx';
@@ -70,7 +66,6 @@ class Home extends Component {
     name: 'HOME',
   }
 
-<<<<<<< HEAD
   render() {
     const { name } = this.state;
     return (
@@ -133,81 +128,6 @@ class Home extends Component {
         </div>
 
         <p class="p3launch">P_3 LAUNCH</p>
-=======
-    render() {
-        const { name } = this.state;
-
-        return (
-            <div className="App">
-              <div class ="dropdown">
-                <button class = "dropdown_b" onClick={this.showAbout}>ABOUT</button>
-            </div>
-
-            <div class = "nav">
-                <div class = "navbutton">
-                      <a href = "" class = "navProjects">PROJECTS</a>
-                      <a href = "" class = "navKor">한국어</a>
-                      <a href = "" class = "navShop">SHOP</a>
-                      <img src = {tiptoe} class ="mainlogo" alt = "logo"/>
-                </div>
-              </div>
-
-                {
-                  this.state.showAbout
-                    ? (
-                      <div className = "dropdown" ref = {(element) => {
-                        this.dropdownAbout = element;
-                      }}
-                      >
-                        <div class = "container">
-                          <div class = "buttonbox">
-                            <button class = "button"> OUR STORY </button>
-                            <button class = "button"> OUR TEAM </button>
-                            <button class = "button"> PARTNERS/PRESS </button>
-                            <button class = "button"> JOIN US </button>
-                          </div>
-                          <div class = "imagebox1">
-                            <img src = {gray} class = "navbarimage1"/>
-                            <div class = "imageboxtext">OUR STORY</div>
-                          </div>
-                          <div class = "imagebox2">
-                            <img src = {gray} class = "navbarimage2"/>
-                            <div class = "imageboxtext">OUR STORY</div>
-                          </div>
-                        </div>
-                      </div>
-                    )
-                    : ( null )
-                  }
-
-                <div class ="slideshow">
-                    <Slide {...properties}>
-                      <div className="each-slide">
-                        <img src = {slideshow1}/>
-                      </div>
-                      <div className="each-slide">
-                        <img src = {slideshow2}/>
-                      </div>
-                      <div className="each-slide">
-                        <img src = {slideshow3}/>
-                      </div>
-                    </Slide>
-                </div>
-
-                <div class = "tiptoeName">
-                      <img src= {tiptoe} class = "nameLogo" alt = "" />
-                      <Typing loop = {true} speed = {110}>
-                          <span class = "yourName">your name.</span>
-                          <Typing.Delay ms={1000} />
-                          <Typing.Backspace count={20} />
-                      </Typing>
-                      <hr class = "line"></hr>
-                </div>
-
-              <div class = "p3launch">
-                <h1 class = "p3launchtext">P_3 LAUNCH</h1>
-              </div>
->>>>>>> master
 
         <img src={Timeline} class="timelineImg" alt="" />
         <img src={threeimages} class="image3" alt="" />
